@@ -84,7 +84,8 @@ if __name__ == '__main__':
     # - рассчитывают возраст (полных лет).
 
     # Пример запуска во 2 режиме:
-    # python employee.py 2 "Ivanov Petr Sergeevich" 2009-07-12 Male
+    # python employee.py 2 --name "Ivanov Petr Sergeevich" --birthdate "2009-07-12" --gender 'Male'
+
     elif args.choice == 2:
         employee = Employee(args.name, args.birthdate, args.gender)
         employee.store(connection)
